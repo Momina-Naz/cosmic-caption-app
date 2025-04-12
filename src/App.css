@@ -126,3 +126,53 @@ span {
   margin-top: 12px;
   margin-right: 1rem;
 }
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 12px;
+  }
+
+  header > h2 {
+    font-size: 1.4rem;
+    margin: 0;
+    text-align: center;
+  }
+
+  header > img {
+    width: 120px;
+    height: auto;
+  }
+
+  .form {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .input_fields {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .space_img {
+    width: 100%;
+    height: auto;
+  }
+
+  .quote,
+  .author {
+    font-size: 16px;
+    padding: 4px;
+  }
+}
