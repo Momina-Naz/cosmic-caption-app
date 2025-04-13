@@ -21,7 +21,7 @@ header {
 }
 
 header > img {
-  width: 200px;
+  width: 100x;
   height: 150px;
   object-fit: contain;
   filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
@@ -44,6 +44,7 @@ header > img:hover {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  margin-top: 1rem;
   padding: 24px;
   background: linear-gradient(145deg, #1a1a2e, #12121f);
   border-radius: 16px;
@@ -101,14 +102,20 @@ button:hover {
   background: linear-gradient(135deg, #9d00ff, #c100ff);
   box-shadow: 0 6px 14px rgba(157, 0, 255, 0.35);
 }
-.space_img {
-  position: relative;
+.img-container {
+  margin-top: 8px;
   height: 300px;
   width: 490px;
 }
+.space_img {
+  position: relative;
+  width: 100%;
+  max-width: 490px;
+  max-height: 300px;
+}
 span {
   position: absolute;
-  text-align: center;
+  display: flex;
   font-family: "Orbitron", "Segoe UI", sans-serif;
   text-shadow: 0 0 4px #ffffff88, 0 0 8px #a64dffaa;
   padding-inline: 5px;
@@ -123,56 +130,6 @@ span {
 }
 
 .input_fields > button {
-  margin-top: 12px;
+  margin-top: 7px;
   margin-right: 1rem;
-}
-@media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    height: auto;
-    padding: 12px;
-  }
-
-  header > h2 {
-    font-size: 1.4rem;
-    margin: 0;
-    text-align: center;
-  }
-
-  header > img {
-    width: 120px;
-    height: auto;
-  }
-
-  .form {
-    width: 100%;
-    padding: 16px;
-  }
-
-  .input_fields {
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  input {
-    font-size: 14px;
-    padding: 8px;
-  }
-
-  button {
-    width: 100%;
-    font-size: 14px;
-    padding: 10px;
-  }
-
-  .space_img {
-    width: 100%;
-    height: auto;
-  }
-
-  .quote,
-  .author {
-    font-size: 16px;
-    padding: 4px;
-  }
 }

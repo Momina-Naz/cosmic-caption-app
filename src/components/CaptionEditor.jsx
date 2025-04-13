@@ -78,7 +78,7 @@ export default function CaptionEditor(){
                 </label>
                 </div>
                 <button onClick={getspaceImage}>Get a new image 🔮</button>
-                <div  ref={captureRef}>
+                <div className="img-container"  ref={captureRef}>
                  < img src={quote.imageUrl} alt="space img" className="space_img" />
                 <span className="quote">{quote.quote}</span>
                 <span className="author">{quote.author}</span>
