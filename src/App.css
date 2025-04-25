@@ -196,7 +196,7 @@ header > img:hover {
   flex-direction: row;
   gap: 10px;
   margin-bottom: 6px;
-  flex-wrap: wrap; /* ⚠️ Added: allows wrapping on small screens */
+  flex-wrap: wrap;
 }
 
 input {
@@ -249,17 +249,17 @@ button:hover {
 .img-container {
   position: relative;
   margin-top: 8px;
-  width: 100%; /* ⚠️ Added: responsive */
+  width: 100%;
   max-width: 490px;
 }
 
 .space_img {
   position: relative;
-  width: 100%; /* ⚠️ Modified: responsive */
+  width: 100%;
   max-width: 490px;
   max-height: 300px;
-  height: auto; /* ⚠️ Added */
-  aspect-ratio: 16 / 9; /* ⚠️ Added: maintain image shape */
+  height: auto;
+  aspect-ratio: 16 / 9;
 }
 
 span {
