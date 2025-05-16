@@ -39,7 +39,7 @@ export default function CaptionEditor(){
     }
     const handleDownload = () => {
         html2canvas(captureRef.current).then(canvas => {
-          const link = document.createElement('a'); // create a download link
+          const link = document.createElement('a'); // creates a download link
           link.download = 'cosmic-caption.png'; // name of file
           link.href = canvas.toDataURL('image/png'); // get image data
           link.click(); // download it
